@@ -1,12 +1,12 @@
 // Typing Script JS
-var typed = new Typed(".typing",{
-    strings: ["Web Designer", "Web Developer", "Youtuber", "Blogger"],
+var typed = new Typed(".typing", {
+    strings: ["Front-End Developer", "Junior Web Developer"],
     typeSpeed: 80,
     backSpeed: 80,
 });
 
-var typed = new Typed(".typing-2",{
-    strings: ["Web Developer", "Web Designer", "Youtuber", "Blogger"],
+var typed = new Typed(".typing-2", {
+    strings: ["Web Developer", "Web Designer", "Web Developer"],
     typeSpeed: 100,
     backSpeed: 60,
 });
@@ -19,10 +19,10 @@ faqs.forEach(faq => {
 
         //change icon
         const icon = faq.querySelector('.faq_icon i');
-        if (icon.className === 'fa-solid fa-plus'){
+        if (icon.className === 'fa-solid fa-plus') {
             icon.className = 'fa-solid fa-minus';
         }
-        else{
+        else {
             icon.className = 'fa-solid fa-plus';
         }
 
@@ -50,5 +50,5 @@ closeBtn.addEventListener('click', closeNav);
 
 //nav color change on scroll
 window.addEventListener('scroll', () => {
-    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY>100);
+    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 100);
 })
